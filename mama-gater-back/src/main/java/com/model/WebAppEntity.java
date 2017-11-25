@@ -1,7 +1,11 @@
 package com.model;
 
+import io.swagger.annotations.ApiModelProperty;
+
 public class WebAppEntity {
+    @ApiModelProperty(notes = "id of the user")
     private int id;
+    @ApiModelProperty(notes = "name of the user")
     private String name;
 
     public WebAppEntity(int id, String name) {
